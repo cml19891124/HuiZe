@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HUZVolunteerPacketHeaerView">
+            <rect key="frame" x="0.0" y="0.0" width="417" height="73"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前选择批次:本科一批" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BmS-j2-ChH">
+                    <rect key="frame" x="135" y="28" width="147" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.25490196079999999" green="0.25490196079999999" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_btn_down" translatesAutoresizingMaskIntoConstraints="NO" id="oeV-Bb-l02">
+                    <rect key="frame" x="287" y="32.5" width="8" height="8"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="oeV-Bb-l02" firstAttribute="centerY" secondItem="BmS-j2-ChH" secondAttribute="centerY" id="3sK-Wx-Llp"/>
+                <constraint firstItem="BmS-j2-ChH" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="far-tY-UhY"/>
+                <constraint firstItem="oeV-Bb-l02" firstAttribute="leading" secondItem="BmS-j2-ChH" secondAttribute="trailing" constant="5" id="obB-BD-qlP"/>
+                <constraint firstItem="BmS-j2-ChH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="vY9-l7-zoO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="downIcon" destination="oeV-Bb-l02" id="fhw-Lz-QQz"/>
+                <outlet property="titleLb" destination="BmS-j2-ChH" id="GLm-m3-WQb"/>
+            </connections>
+            <point key="canvasLocation" x="-327" y="26"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_btn_down" width="8" height="8"/>
+    </resources>
+</document>

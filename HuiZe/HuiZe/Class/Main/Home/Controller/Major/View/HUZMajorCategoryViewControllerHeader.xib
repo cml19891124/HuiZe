@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HUZMajorCategoryViewControllerHeader">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="63"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="----" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngM-Vs-TgZ">
+                    <rect key="frame" x="193" y="22.5" width="28" height="18"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <color key="textColor" red="0.1803921568627451" green="0.52549019607843139" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yxo-OF-2Oj">
+                    <rect key="frame" x="0.0" y="62" width="414" height="1"/>
+                    <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Pds-pq-SgT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ngM-Vs-TgZ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="DVP-Rt-jUN"/>
+                <constraint firstAttribute="bottom" secondItem="Yxo-OF-2Oj" secondAttribute="bottom" id="FAW-Ao-pRR"/>
+                <constraint firstItem="ngM-Vs-TgZ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="JXZ-ro-cwN"/>
+                <constraint firstAttribute="trailing" secondItem="Yxo-OF-2Oj" secondAttribute="trailing" id="Ouu-nX-enf"/>
+                <constraint firstItem="Yxo-OF-2Oj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dqY-hW-VtW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titleLb" destination="ngM-Vs-TgZ" id="jVD-Sg-xBN"/>
+            </connections>
+            <point key="canvasLocation" x="-470" y="272"/>
+        </view>
+    </objects>
+</document>
